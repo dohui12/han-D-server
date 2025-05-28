@@ -5,7 +5,7 @@ param = {
     "model_path": "models/best.pt",
     "time_steps": 60,
     "feat_dim": 138,
-    "n_classes": 10,
+    "n_classes": 524,
     "device": "cuda" if torch.cuda.is_available() else "cpu",
-    "class_names": ["class_0", "class_1", "class_2", "class_3", "class_4", "class_5", "class_6", "class_7", "class_8", "class_9",]
+    "class_names": [f"class_{i}" for i in range(524)],
 }

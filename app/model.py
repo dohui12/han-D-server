@@ -3,7 +3,7 @@ import torch.nn as nn
 from .config import param
 
 class KPNet(nn.Module):
-    def __init__(self, feat_dim, n_classes):
+    def __init__(self, time_steps, feat_dim, n_classes):
         super().__init__()
         self.lstm1 = nn.LSTM(feat_dim,128,batch_first=True)
         self.bn1   = nn.BatchNorm1d(128)
