@@ -12,6 +12,6 @@ def predict_sequence(model, input_sequence, threshold=0.6):
         confidence, pred_idx = torch.max(probs, dim=1)  # 최고 확률과 인덱스
 
         if confidence.item() < threshold:
-            return "class_5"  # 확률이 낮을 경우 특수 클래스
+            return "class_10"  # 확률이 낮을 경우 특수 클래스
         else:
             return param['class_names'][pred_idx.item()]
