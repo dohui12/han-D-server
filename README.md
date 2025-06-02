@@ -45,10 +45,14 @@
 ## 🧪 How to Run
 
 1. 패키지 설치
+```
 pip install -r requirements.txt
+```
 
 2. 서버 실행
+```
 uvicorn app.main:app --reload
+```
 
 ## 🧑‍💻 Contributors
 | 이름  | 역할                |
